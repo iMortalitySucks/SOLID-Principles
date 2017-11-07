@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace ResturantBasics
 {
-    public abstract class Worker
+    public abstract class Worker : IWorker
     {
         // One task per minute
         private const int MaxTasksPerRound = 5;

@@ -12,7 +12,7 @@ namespace ResturantBasics
     /// <summary>
     /// Regular customer
     /// </summary>
-    public class Customer
+    public class Customer : ICustomer
     {
         private const int MaxWaitTime = 5;
 

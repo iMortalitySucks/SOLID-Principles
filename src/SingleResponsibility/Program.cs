@@ -13,9 +13,9 @@ namespace SingleResponsibility
             Cook cook = new Cook();
             Busser busser = new Busser();
 
-            List<Worker> workers = new List<Worker>(new Worker[] { hostess, waiter, cook, busser });
+            List<IWorker> workers = new List<IWorker>(new IWorker[] { hostess, waiter, cook, busser });
 
-            List<Customer> customers = new List<Customer>();
+            List<ICustomer> customers = new List<ICustomer>();
 
             while (true)
             {
