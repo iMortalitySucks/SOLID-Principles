@@ -42,18 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BillCustomerTasking.cs" />
-    <Compile Include="BusTableTasking.cs" />
-    <Compile Include="CookOrderTasking.cs" />
-    <Compile Include="DeliverOrderTasking.cs" />
-    <Compile Include="PlatFoodTasking.cs" />
-    <Compile Include="PrepareFoodTasking.cs" />
+    <Compile Include="Taskings\BillCustomerTasking.cs" />
+    <Compile Include="Taskings\BusTableTasking.cs" />
+    <Compile Include="Taskings\CookOrderTasking.cs" />
+    <Compile Include="Taskings\DeliverOrderTasking.cs" />
+    <Compile Include="Taskings\PlatFoodTasking.cs" />
+    <Compile Include="Taskings\PrepareFoodTasking.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SeatCustomerTasking.cs" />
+    <Compile Include="Taskings\SeatCustomerTasking.cs" />
     <Compile Include="SuperWorker.cs" />
-    <Compile Include="TakeOrderTasking.cs" />
-    <Compile Include="Taskings.cs" />
+    <Compile Include="Taskings\TakeOrderTasking.cs" />
+    <Compile Include="Taskings\FindTableTasking.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

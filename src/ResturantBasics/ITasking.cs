@@ -5,5 +5,7 @@
         string Name { get; }
 
         bool DoTask();
+
+        bool TaskCompleted { get; }
     }
 }

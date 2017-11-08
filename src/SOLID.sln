@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleResponsibility", "Sin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenForAnything", "OpenForAnything\OpenForAnything.csproj", "{C3AD3376-8F82-41D5-A534-14469313FA60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiskovsProblem", "LiskovsProblem\LiskovsProblem.csproj", "{3B616CF7-0920-4D97-9BD1-B9E599E20B44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleMarriedOrDependent", "SingleMarriedOrDependent\SingleMarriedOrDependent.csproj", "{118AA70E-06C5-46F9-8623-939595D54E9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{C3AD3376-8F82-41D5-A534-14469313FA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3AD3376-8F82-41D5-A534-14469313FA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3AD3376-8F82-41D5-A534-14469313FA60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B616CF7-0920-4D97-9BD1-B9E599E20B44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B616CF7-0920-4D97-9BD1-B9E599E20B44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B616CF7-0920-4D97-9BD1-B9E599E20B44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B616CF7-0920-4D97-9BD1-B9E599E20B44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{118AA70E-06C5-46F9-8623-939595D54E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{118AA70E-06C5-46F9-8623-939595D54E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{118AA70E-06C5-46F9-8623-939595D54E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{118AA70E-06C5-46F9-8623-939595D54E9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,6 +9,12 @@
 
         public string Name { get; private  set; }
 
-        public abstract bool DoTask();
+        public virtual bool DoTask()
+        {
+            TaskCompleted = true;
+            return TaskCompleted;
+        }
+
+        public bool TaskCompleted { get; private set; }
     }
 }

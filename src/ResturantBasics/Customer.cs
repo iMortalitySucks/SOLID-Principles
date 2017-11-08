@@ -5,6 +5,7 @@ namespace ResturantBasics
 {
     public enum Mood
     {
+        Waiting,
         Happy,
         Unhappy
     }
@@ -14,27 +15,32 @@ namespace ResturantBasics
     /// </summary>
     public class Customer : ICustomer
     {
+        public string CustomerName { get; set; } = "Customer";
+
         private const int MaxWaitTime = 5;
 
         public int WaitTime { get; private set; }
 
+        public Mood CurrentMood { get; private set; } = Mood.Waiting;
+
         public void Eat()
         {
             // Customer eats their food
-            Console.WriteLine("The customer is eating...");
+            Console.WriteLine($"{CustomerName} is eating...");
             Thread.Sleep(1000);
         }
 
         public void Pay()
         {
             // Customer pays the billz
-            Console.WriteLine("The customer is paying...");
+            Console.WriteLine($"{CustomerName} is paying...");
             Thread.Sleep(1000);
         }
 
         public void Leave(Mood mood)
         {
-            Console.WriteLine($"The customer left {mood}!");
+            CurrentMood = mood;
+            Console.WriteLine($"{CustomerName} left {mood}!");
         }
 
         public bool Wait()

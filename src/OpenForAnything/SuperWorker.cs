@@ -7,6 +7,7 @@ namespace OpenForAnything
     {
         public object PerformTask(ITasking tasking)
         {
+            // Given the current method here, in order to add a new task, we would go and modify this file and add more cases
             switch (tasking.Name)
             {
                 case "find a table":
@@ -34,7 +35,7 @@ namespace OpenForAnything
                     BusTable(1);
                     return null;
                 default:
-                    throw new NotImplementedException("worker doesn't know how to do that task!");
+                    throw new NotSupportedException("worker doesn't know how to do that task!");
             }
            
         }

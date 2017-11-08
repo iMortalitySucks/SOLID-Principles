@@ -5,5 +5,9 @@
         int TaskNumber { get; }
 
         void Reset();
+
+        void PerformTask(ITasking tasking);
+
+        string GetName();
     }
 }

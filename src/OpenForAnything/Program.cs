@@ -2,8 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OpenForAnything
 {
@@ -11,6 +9,8 @@ namespace OpenForAnything
     {
         static ITasking[] NewCustomerTaskings()
         {
+            // There is something missing about these taskings...
+            //  we will cover that in dependency inversion
             return new ITasking[]
             {
                 new FindTableTasking(),
@@ -54,6 +54,8 @@ namespace OpenForAnything
                 {
                     ITasking tasking;
 
+                    // So to be more realistic, we put the tasks into a queue
+                    //  So every round the worker can keep working on one order
                     while((tasking = tasksToDo.Dequeue()) != null)
                     {
                         worker.PerformTask(tasking);
@@ -66,6 +68,8 @@ namespace OpenForAnything
 
                         if(tasking is BillCustomerTasking)
                         {
+                            // Obviously, there is a problem here that the "new customer" is probably not the one that left happy,
+                            //  but for practice purposes, we are just removing a customer
                             newCustomer.Pay();
                             newCustomer.Leave(Mood.Happy);
                             removeCustomers.Add(newCustomer);
